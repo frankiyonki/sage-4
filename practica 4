@@ -1,0 +1,59 @@
+#Calcula el primer límite de la lista adjunta..
+
+x = var("x")
+f(x) = ((x^2) + (2*x) - 8) / (x-2)
+limit(f(x), x = 2)
+
+
+#Calcula el límite lateral indicado en el punto 2 de la lista adjunta
+
+x = var("x")
+f(x) = sec(x)
+limit(f(x), x = pi/2, dir = "+")
+
+#Calcula el límite lateral indicado en el punto 3 de la lista adjunta
+
+x = var("x")
+f(x) = sec(x)
+limit(f(x), x = pi/2, dir = "-")
+
+#Calcula la derivada indicada en punto 4 de la lista adjunta
+
+x = var("x")
+f(x) = (x^2) * (e^(3*x)) * (cos(2*x))
+diff(f(x), x)
+
+
+#Calcula la derivada indicada en punto 5 de la lista adjunta
+
+t = var("t")
+f(t) = (t^2 + 1) / (t - 2)
+diff(f(t), t)
+
+
+#Calcula la derivada indicada en punto 6 de la lista adjunta
+
+x, y = var("x, y")      
+f(x) = x * cos(x)
+diff(f(y), y)
+
+#Calcula la integral indefinida indicada en punto 7 de la lista adjunta
+
+x = var(x)
+f(x) = (x + 1) / (x^2 + 2*x + 1)
+integrate(f(x), x)
+
+
+#Calcula el valor de la integral definida indicada en punto 8 de la lista adjunta
+
+x = var("x")
+f(x) = sec(x)
+integrate(f(x), x, -pi/4, pi/4)
+
+
+#Calcula la integral indefinida indicada en punto 9 de la lista adjunta
+
+x = var("x")
+f(x) = ("x * e^(-x^2)")
+integrate(f(x), x)
+
